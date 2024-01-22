@@ -28,7 +28,8 @@ cd ..
 
 - make sure to unlock the port on the port tab
 - open the link for 4567 in your browser
-- append to the url to `/api/activities/home`
+- append to the url to `
+`
 - you should get back json
 
 
@@ -66,7 +67,7 @@ Run
 docker run --rm -p 4567:4567 -it backend-flask
 FRONTEND_URL="*" BACKEND_URL="*" docker run --rm -p 4567:4567 -it backend-flask
 export FRONTEND_URL="*"
-export BACKEND_URL="*"
+export BACKEND_URL="*" 
 docker run --rm -p 4567:4567 -it -e FRONTEND_URL='*' -e BACKEND_URL='*' backend-flask
 docker run --rm -p 4567:4567 -it  -e FRONTEND_URL -e BACKEND_URL backend-flask
 unset FRONTEND_URL="*"
